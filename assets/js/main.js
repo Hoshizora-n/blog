@@ -7,16 +7,14 @@ const selectElement = (selector) => {
   );
 };
 
-ProcessingInstruction.
-
 //Nav styles on scroll
 const scrollHeader = () => {
-  // const navbarElement = selectElement('#header');
-  // if(this.scrollY >= 15) {
-  //     navbarElement.classList.add('activated');
-  // } else {
-  //     navbarElement.classList.remove('activated');
-  // }
+  const navbarElement = selectElement("#header");
+  if (this.scrollY >= 15) {
+    navbarElement.classList.add("activated");
+  } else {
+    navbarElement.classList.remove("activated");
+  }
 };
 
 window.addEventListener("scroll", scrollHeader);
