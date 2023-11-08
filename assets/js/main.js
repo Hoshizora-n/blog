@@ -65,6 +65,8 @@ themeToggleBtn.addEventListener("click", function () {
   } else {
     localStorage.removeItem("currentTheme");
   }
+
+  DISQUS.reset({ reload: true, config: disqus_config });
 });
 
 // Swiper
